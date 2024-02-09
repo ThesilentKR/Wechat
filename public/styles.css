@@ -1,0 +1,124 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-image: url("https://png.pngtree.com/background/20221201/original/pngtree-abstract-greencircuit-line-technology-on-grey-design-modern-futuristic-background-vector-picture-image_1972744.jpg");
+    background-size: cover;
+    background-position: center center;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+#chat-container {
+    max-width: 600px;
+    margin: 30px auto;
+    background: #1e1e1e;
+    border: 1px solid #333;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 0.8s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#chat-header {
+    background-color: #ff4081;
+    color: #ffffff;
+    text-align: center;
+    padding: 15px;
+    border-radius: 15px 15px 0 0;
+}
+
+#chat-window {
+    height: 400px;
+    overflow: auto;
+    background-image: url("https://i.pinimg.com/736x/c5/56/52/c556529555fc8578e9a9c53b10437a38.jpg");
+    background-size: cover;
+    background-position: center center;
+    padding: 10px;
+    animation: slideIn 0.8s ease;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+#output p {
+    padding: 10px;
+    margin: 0;
+    border-bottom: 1px solid #333;
+    animation: fadeInUp 0.8s ease;
+}
+
+@keyframes fadeInUp {
+    from {
+        transform: translateY(10px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+#feedback p {
+    color: #aaa;
+    padding: 10px;
+    margin: 0;
+    transition: opacity 0.5s ease; 
+}
+
+#input-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #1e1e1e;
+    border-radius: 0 0 15px 15px;
+    animation: slideIn 0.8s ease;
+}
+
+input {
+    padding: 8px;
+    box-sizing: border-box;
+    background: #282828;
+    border: 1px solid #333;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    border-radius: 5px;
+    width: calc(33% - 10px);
+    color: #ffffff;
+    animation: fadeInUp 0.8s ease;
+}
+
+button {
+    background: #ff4081;
+    color: #ffffff;
+    font-size: 16px;
+    border: 0;
+    padding: 8px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: calc(33% - 10px);
+    animation: fadeInUp 0.8s ease;
+}
+
+button:hover {
+    background: #d81b60;
+}

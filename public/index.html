@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeChat</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.7.3/socket.io.js"></script>
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/1458/1458551.png">
+    <link href="./styles.css" rel="stylesheet" />
+</head>
+<body>
+
+    <div id="chat-container">
+        <div id="chat-header">
+            <h2>WeChat</h2>
+        </div>
+        <div id="chat-window">
+            <div id="output"></div>
+            <div id="feedback"></div>
+        </div>
+        <div id="input-container">
+            <input id="username" type="text" placeholder="Tu nombre" />
+            <input id="message" type="text" placeholder="Escribe tu mensaje" />
+            <button id="send">Enviar</button>
+        </div>
+    </div>
+
+</body>
+<script src="/chat.js"></script>
+</html>
